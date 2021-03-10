@@ -17,8 +17,6 @@ import javafx.util.converter.NumberStringConverter;
 import lombok.extern.slf4j.Slf4j;
 
 import java.time.LocalTime;
-import java.time.format.FormatStyle;
-import java.util.Locale;
 
 import static java.time.temporal.ChronoUnit.SECONDS;
 
@@ -39,7 +37,7 @@ public class InactivityMeterView extends VBox {
     private final TimerViewModel timerViewModel = new TimerViewModel();
     private final InactivityMeterViewModel inactivityMeterViewModel = new InactivityMeterViewModel();
     private final GlobalActionListener listener;
-    private final LocalTimeStringConverter localTimeStringConverter = new LocalTimeStringConverter(FormatStyle.MEDIUM, Locale.getDefault());
+    private final LocalTimeStringConverter localTimeStringConverter = Utils.timeConverter;
 
     public InactivityMeterView(GlobalActionListener listener) {
         this.listener = listener;

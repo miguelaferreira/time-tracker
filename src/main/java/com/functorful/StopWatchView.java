@@ -6,11 +6,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Font;
-import javafx.util.converter.LocalTimeStringConverter;
 import lombok.extern.slf4j.Slf4j;
-
-import java.time.format.FormatStyle;
-import java.util.Locale;
 
 @Slf4j
 public class StopWatchView extends GridPane {
@@ -29,7 +25,7 @@ public class StopWatchView extends GridPane {
         Bindings.bindBidirectional(
                 lblTime.textProperty(),
                 viewModel.timeProperty(),
-                new LocalTimeStringConverter(FormatStyle.MEDIUM, Locale.getDefault()));
+                Utils.timeConverter);
     }
 
     private void createView(boolean showButton) {

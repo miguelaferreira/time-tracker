@@ -36,7 +36,7 @@ javafx {
     modules = ['javafx.controls', 'javafx.fxml']
 }
 
-mainClassName = "com.functorful.HelloFX"
+mainClassName = "com.functorful.TimeTrackerApplication"
 
 jlink {
     options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']

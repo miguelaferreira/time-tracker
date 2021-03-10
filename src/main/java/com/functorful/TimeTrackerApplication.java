@@ -11,7 +11,7 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class HelloFX extends Application {
+public class TimeTrackerApplication extends Application {
 
     private final GlobalActionListener listener = new GlobalActionListener();
 
