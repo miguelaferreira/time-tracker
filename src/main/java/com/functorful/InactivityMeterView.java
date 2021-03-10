@@ -72,10 +72,10 @@ public class InactivityMeterView extends VBox {
         gp.setVgap(8);
         gp.add(lblTimeManagement, 0, 1);
         gp.add(hbTimeManagementButtons, 1, 1);
-        gp.add(lblInactivityCounter, 0, 2);
-        gp.add(lblTime, 1, 2);
-        gp.add(lblInactivityThreshold, 0, 3);
-        gp.add(hbThreshold, 1, 3);
+        gp.add(lblInactivityCounter, 0, 3);
+        gp.add(lblTime, 1, 3);
+        gp.add(lblInactivityThreshold, 0, 4);
+        gp.add(hbThreshold, 1, 4);
 
         final ColumnConstraints col = new ColumnConstraints();
         col.setPercentWidth(50);

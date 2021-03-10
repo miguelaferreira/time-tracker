@@ -43,7 +43,7 @@ public class TimeTrackerApplication extends Application {
 
         String javaVersion = System.getProperty("java.version");
         String javafxVersion = System.getProperty("javafx.version");
-        Label helloWorld = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " + javaVersion + ".");
+        Label helloWorld = new Label("Time Tracker, JavaFX " + javafxVersion + ", running on Java " + javaVersion + ".");
 
         vBox.getChildren().addAll(stopWatchView, inactivityMeterView, helloWorld);
 

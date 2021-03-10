@@ -11,6 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class StopWatchView extends GridPane {
 
+    public static final Font FONT = new Font(24);
     private final StartStopButton btnStartStop = new StartStopButton();
     private final Label lblTime = new Label("00:00:00");
 
@@ -42,7 +43,8 @@ public class StopWatchView extends GridPane {
         col.setPercentWidth(50);
         this.getColumnConstraints().addAll(col, col);
 
-        lblTime.setFont(new Font(24));
+        lblTime.setFont(FONT);
+        btnStartStop.setFont(FONT);
     }
 
     private void wireStopStartEventHandlers() {
